@@ -215,7 +215,7 @@ public class HttpServer {
 
         private void serveFile(String path, OutputStream outputStream, Map<String, String> headers, String queryString) throws IOException {
             if (path.equals("/")) {
-                path = "web/index.html";
+                path = "/index.html";
             }
 
             Path filePath = Paths.get(config.getDocumentRoot(), path.substring(1));
